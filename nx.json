@@ -25,6 +25,12 @@
     "book-store-e2e": {
       "tags": [],
       "implicitDependencies": ["book-store"]
+    },
+    "services": {
+      "tags": []
+    },
+    "shared": {
+      "tags": []
     }
   }
 }
