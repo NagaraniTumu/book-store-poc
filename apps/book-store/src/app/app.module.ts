@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from '@app/shared';
+
 import { MatCardComponent, EllipsisPipe, ArrayToStringPipe } from '@app/shared';
 
 import { AppComponent } from './app.component';

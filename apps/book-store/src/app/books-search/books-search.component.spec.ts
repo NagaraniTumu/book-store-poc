@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -18,10 +17,8 @@ describe('BooksSearchComponent', () => {
   const booksData = require('../../assets/books.json');
 
   const booksServiceSpy = {
-    getBooks: jest.fn(),
+    getBooks: jest.fn(() => of(booksData)),
   };
-
-  booksServiceSpy.getBooks.mockReturnValueOnce(of(booksData));
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
