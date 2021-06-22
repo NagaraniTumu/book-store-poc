@@ -14,7 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ServicesModule } from '@app/services';
+import { SharedModule } from '@app/shared';
 import { MatCardComponent, EllipsisPipe, ArrayToStringPipe } from '@app/shared';
 
 import { AppComponent } from './app.component';
@@ -41,13 +41,13 @@ import { CollectionComponent } from './collection/collection.component';
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
+    SharedModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
-    ServicesModule,
     MatButtonModule,
     FlexLayoutModule,
     MatCardModule,

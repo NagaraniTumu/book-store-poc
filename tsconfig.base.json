@@ -16,7 +16,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@app/services": ["libs/services/src/index.ts"],
       "@app/shared": ["libs/shared/src/index.ts"]
     }
   },

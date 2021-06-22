@@ -1,4 +1,4 @@
-export const APP_NAME = 'Library';
+export const APP_TITLE = 'Enlight';
 
 export const SIDE_NAV_LIST_ITEMS = {
   SEARCH: 'Search',

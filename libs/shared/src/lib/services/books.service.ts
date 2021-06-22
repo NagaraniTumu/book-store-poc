@@ -6,20 +6,21 @@ import { map } from 'rxjs/operators';
 
 import { Book } from '../models/book.model';
 
+import { BOOKS_API_URL } from '../constants/api.constants';
+
 @Injectable({
   providedIn: 'root',
 })
 export class BooksService {
-  apiURL = 'https://www.googleapis.com/books/v1/volumes?q=';
-
   constructor(private httpClient: HttpClient) {}
 
   getBooks(searchString: string): Observable<Book[]> {
     const httpOptions = {
       headers: new HttpHeaders(),
     };
+
     return this.httpClient
-      .get<Book[]>(this.apiURL + searchString, httpOptions)
+      .get<Book[]>(BOOKS_API_URL + searchString, httpOptions)
       .pipe(map((response) => response['items']));
   }
 }

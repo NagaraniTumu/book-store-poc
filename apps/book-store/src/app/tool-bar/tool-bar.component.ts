@@ -1,7 +1,7 @@
 import { Output, EventEmitter } from '@angular/core';
 import { Component } from '@angular/core';
 
-import { APP_NAME } from '../constants/app.constants';
+import { APP_TITLE } from '../constants/app.constants';
 
 @Component({
   selector: 'app-tool-bar',
@@ -9,7 +9,7 @@ import { APP_NAME } from '../constants/app.constants';
   styleUrls: ['./tool-bar.component.scss'],
 })
 export class ToolBarComponent {
-  public appName: string = APP_NAME;
+  public appTitle: string = APP_TITLE;
 
   @Output() public toggleSideNav = new EventEmitter();
 

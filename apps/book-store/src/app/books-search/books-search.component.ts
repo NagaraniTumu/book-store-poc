@@ -3,14 +3,13 @@ import { Component, OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-import { Book, BooksService } from '@app/services';
+import { Book, BooksService } from '@app/shared';
 
 import { SEARCH_INPUT_PLACEHOLDER } from '../constants/app.constants';
 
 @Component({
   selector: 'app-books-search',
   templateUrl: './books-search.component.html',
-  styleUrls: ['./books-search.component.scss'],
 })
 export class BooksSearchComponent implements OnDestroy {
   public placeholder: string = SEARCH_INPUT_PLACEHOLDER;
