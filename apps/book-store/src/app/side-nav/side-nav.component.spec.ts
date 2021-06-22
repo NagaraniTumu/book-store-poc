@@ -14,7 +14,6 @@ describe('SideNavComponent', () => {
       declarations: [SideNavComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       imports: [HttpClientTestingModule, RouterTestingModule.withRoutes([])],
-      providers: [],
     }).compileComponents();
   });
 

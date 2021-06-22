@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class MatCardComponent {
   @Input()
-  public book!: {
+  public book: {
     title: string;
     subtitle: string;
     imageSrc: string;

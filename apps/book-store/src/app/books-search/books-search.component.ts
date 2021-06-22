@@ -13,7 +13,7 @@ import { SEARCH_INPUT_PLACEHOLDER } from '../constants/app.constants';
 })
 export class BooksSearchComponent implements OnDestroy {
   public placeholder: string = SEARCH_INPUT_PLACEHOLDER;
-  public searchValue!: string;
+  public searchValue: string;
   public books: Book[] = [];
 
   public unSubscribe$ = new Subject<void>();
